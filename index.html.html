@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mownishree - Portfolio</title>
+    <link href="style2.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">Mownishree</div>
+            <ul class="nav-menu">
+                <li><a href="#home" onclick="scrollTo('home')">Home</a></li>
+                <li><a href="#about" onclick="scrollTo('about')">About</a></li>
+                <li><a href="#skills" onclick="scrollTo('skills')">Skills</a></li>
+                <li><a href="#projects" onclick="scrollTo('projects')">Projects</a></li>
+                <li><a href="#contact" onclick="scrollTo('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Hi, I'm Mownishree</h1>
+            <p>Web Developer & Designer</p>
+            <a href="#projects" class="btn" onclick="scrollTo('projects')">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="profile-pic">👩‍💻</div>
+                <div class="about-text">
+                    <p>I'm a passionate web developer with 3 years of experience creating websites and web applications. I love turning ideas into reality through clean, efficient code.</p>
+                    <br>
+                    <p>I specialize in modern web technologies and always strive to create user-friendly, responsive designs that look great on all devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item" onclick="showSkillInfo('HTML & CSS')">
+                    <div class="skill-icon">🎨</div>
+                    <h3>HTML & CSS</h3>
+                    <p>Creating beautiful, responsive layouts</p>
+                </div>
+                <div class="skill-item" onclick="showSkillInfo('JavaScript')">
+                    <div class="skill-icon">⚡</div>
+                    <h3>JavaScript</h3>
+                    <p>Interactive and dynamic web experiences</p>
+                </div>
+                <div class="skill-item" onclick="showSkillInfo('React')">
+                    <div class="skill-icon">⚛️</div>
+                    <h3>React</h3>
+                    <p>Modern component-based applications</p>
+                </div>
+                <div class="skill-item" onclick="showSkillInfo('Design')">
+                    <div class="skill-icon">🎯</div>
+                    <h3>UI/UX Design</h3>
+                    <p>User-centered design principles</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">🌐</div>
+                    <div class="project-info">
+                        <h3>Business Website</h3>
+                        <p>A modern, responsive website for a local business with contact forms and gallery.</p>
+                        <a href="#" class="project-link" onclick="viewProject('Business Website')">View Project →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">📱</div>
+                    <div class="project-info">
+                        <h3>Todo App</h3>
+                        <p>A simple but powerful task management app built with JavaScript and local storage.</p>
+                        <a href="#" class="project-link" onclick="viewProject('Todo App')">View Project →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">🛒</div>
+                    <div class="project-info">
+                        <h3>Online Store</h3>
+                        <p>E-commerce website with shopping cart functionality and product catalog.</p>
+                        <a href="#" class="project-link" onclick="viewProject('Online Store')">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 style="margin-bottom: 2rem;">Contact Info</h3>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <strong>Email</strong><br>
+                            mownishree06@gmail.com
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <div>
+                            <strong>Phone</strong><br>
+                            +91 9848194567
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <strong>Location</strong><br>
+                            Cuddalore
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" onsubmit="sendMessage(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mownishree. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="style1.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'979649a2b0b67f66',t:'MTc1NjkxMzQxOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
